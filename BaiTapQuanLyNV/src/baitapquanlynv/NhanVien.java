@@ -16,7 +16,7 @@ public class NhanVien extends BaiTapQuanLyNV{
         super();
     }
     
-    
+    @Override
     public double tinhThuong() {
         if(this.tongSohl<100)
             return this.tinhThuong=0;
