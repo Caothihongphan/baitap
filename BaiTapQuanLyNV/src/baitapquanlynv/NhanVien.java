@@ -22,9 +22,10 @@ public class NhanVien extends BaiTapQuanLyNV{
             return this.tinhThuong=0;
         else
             if( this.tongSohl>200 )
-                return this.tinhThuong = this.tienLuong * 20000;
+                return this.tinhThuong = this.tienLuong * 0.2;
         return 
-                this.tinhThuong=this.tienLuong *1/10;
+                this.tinhThuong=this.tienLuong *0.1;
+        
      
     
 }

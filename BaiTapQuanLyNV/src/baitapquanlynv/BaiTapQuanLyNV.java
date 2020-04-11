@@ -101,7 +101,7 @@ public class BaiTapQuanLyNV {
     
     public String getThongTin() {
         return  " họ tên nhân viên: " + this.hoTen  +  ", tuổi: " + this.tuoi +
-                " địa chi nhân viên: " + this.diaChi  + ",tiền lương : " + this.tienLuong + ",tổng số giờ làm được:"+this.tongSohl;
+                " địa chi nhân viên: " + this.diaChi  + ",tiền lương : " + this.tienLuong + ",tổng số giờ làm được:"+this.tongSohl+", tinhThuong" + this.tinhThuong();
     }
     
     
@@ -113,18 +113,18 @@ public class BaiTapQuanLyNV {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập số nhân viên trong công ty: ");
         int soNhanVien = scanner.nextInt();
-        BaiTapQuanLyNV[] nv = new BaiTapQuanLyNV[soNhanVien];
+        BaiTapQuanLyNV[] nhanVien1 = new BaiTapQuanLyNV[soNhanVien];
          
         System.out.println("Nhập thông tin cho nhân viên");
         
         for (int i = 0; i < soNhanVien; i++){
             System.out.println("Nhập thông tin nhân viên thứ " + (i + 1) + ":");
-       nv[i].nhap();
+               nhanVien1[i].nhap();
         }
          
         System.out.println("Thông tin của các nhân viên trong công ty: ");
         for (int i = 0; i < soNhanVien; i++) {
-            System.out.println(nv[i].getThongTin());
+            System.out.println(nhanVien1[i].getThongTin());
         }
         // TODO code application logic here
     }
