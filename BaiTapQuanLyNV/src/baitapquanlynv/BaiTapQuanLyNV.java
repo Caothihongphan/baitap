@@ -79,7 +79,7 @@ public class BaiTapQuanLyNV {
         this. tongSohl= tongSohl;
     }
      
-    public void nhap() {
+     void nhap() {
        
         System.out.print("Nhập họ tên nhân viên: ");
         hoTen = scanner.nextLine();
@@ -98,12 +98,15 @@ public class BaiTapQuanLyNV {
     }
     
      
-    @Override
-    public String toString() {
-        return  " họ tên nhân viên: " + this.hoTen  +  ", tuổi: " + this.tuoi +
-                " địa chi nhân viên: " + this.diaChi  + ",tiền lương : " + this.tienLuong + ",tổng số giờ làm được:"+this.tongSohl+", tinhThuong" + this.tinhThuong();
+    void Xuatthongtin(){
+       System.out.println("Ten cua nhan vien:"+hoTen);
+       System.out.println("Tuoi cua nhan vien:"+tuoi);
+       System.out.println("Dia chi cua nhan vien:"+diaChi);
+       System.out.println("Luong nhan vien:"+tienLuong);
+       System.out.println("tong so gio lam:"+tongSohl); 
+       System.out.println("Tien thuong:"+tinhThuong());
+       System.out.println("Tong luong nhan vien:"+(tienLuong+tinhThuong()));
     }
-    
     
 
     /**
