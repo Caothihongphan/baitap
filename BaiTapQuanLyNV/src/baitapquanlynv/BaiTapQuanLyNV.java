@@ -19,11 +19,20 @@ public class BaiTapQuanLyNV {
     private String diaChi;
     protected double tienLuong;
     protected int tongSohl;
+    private double tinhThuong;
     Scanner scanner = new Scanner(System.in);
      
+    
     public BaiTapQuanLyNV () {
         super();
+       
+        hoTen="Cao Thi Hong Phan";
+        tuoi=23;
+        diaChi="Phu Yen";
+        tienLuong=500000;
+        tongSohl=450;
     }
+    
  
     public BaiTapQuanLyNV( String hoTen,int tuoi, String diaChi,
         double tienLuong, int tongSohl) {
@@ -94,8 +103,19 @@ public class BaiTapQuanLyNV {
     }
      
     public double tinhThuong() {
-        return 0;
-    }
+       
+        if(this.tongSohl<100)
+            return this.tinhThuong=0;
+        else
+            if( this.tongSohl>200 )
+                return this.tinhThuong = this.tienLuong * 0.2;
+        return 
+                this.tinhThuong=this.tienLuong *0.1;
+        
+     
+    
+}
+    
     
      
     void Xuatthongtin(){
