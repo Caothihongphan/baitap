@@ -9,7 +9,7 @@ package baitap3;
  *
  * @author DELL
  */
-public class SinhVienPoly {
+public  abstract class SinhVienPoly {
     
      public String Name;
     public String nganhHoc;
