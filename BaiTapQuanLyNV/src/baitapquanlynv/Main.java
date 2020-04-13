@@ -14,21 +14,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số nhân viên trong công ty: ");
+         System.out.println("Nhập so luong nhân viên");
         int soNhanVien = scanner.nextInt();
-        BaiTapQuanLyNV[] baiTapQuanLyNV = new BaiTapQuanLyNV[soNhanVien];
-         
-        System.out.println("Nhập thông tin cho nhân viên");
+        BaiTapQuanLyNV BT = new BaiTapQuanLyNV();
         
-        for (int i = 0; i < soNhanVien; i++){
-            System.out.println("Nhập thông tin nhân viên thứ " + (i + 1) + ":");
-              baiTapQuanLyNV[i].nhap();
-        }
-         
-        System.out.println("Thông tin của các nhân viên trong công ty: ");
-        for (int i = 0; i < soNhanVien; i++) {
-            System.out.println(baiTapQuanLyNV[i].toString());
-        }
+       
+        System.out.println("Nhập thông tin cho nhân viên");
+        BT.nhap();
+        BT.Xuatthongtin();
+                
+        
+        
+        
+        
+        
+        
         // TODO code application logic here
     }
     

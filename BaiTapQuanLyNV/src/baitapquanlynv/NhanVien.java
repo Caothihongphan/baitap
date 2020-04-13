@@ -10,24 +10,13 @@ package baitapquanlynv;
  * @author DELL
  */
 public class NhanVien extends BaiTapQuanLyNV{
-    private double tinhThuong;
+   
     
     public NhanVien() {
         super();
     }
     
-    @Override
-    public double tinhThuong() {
-        if(this.tongSohl<100)
-            return this.tinhThuong=0;
-        else
-            if( this.tongSohl>200 )
-                return this.tinhThuong = this.tienLuong * 0.2;
-        return 
-                this.tinhThuong=this.tienLuong *0.1;
-        
-     
     
 }
-}
+
 
